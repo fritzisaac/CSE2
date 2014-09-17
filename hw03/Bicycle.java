@@ -1,6 +1,6 @@
 //////////////////////////////////////
 //Fritz Isaac
-//hw03 Bicycle
+//hw03 Bicycle Program
 
 //program will receive input from user 
     //(number of counts on a cyclometer, then number of seconds)
