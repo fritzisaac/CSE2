@@ -14,110 +14,110 @@ public class NumberStack{
             int x = myScanner.nextInt(); //Here we prompt the user to enter a value
             System.out.println("Using for loops: "); // Here we print which method we are using to create this stack of numbers
 
-            for (int i = 1; i < (x + 1); i++) { //for each number group
+            for (int a = 1; a < (x + 1); a++) { //for each number group
                 
-                for (int k = i; k > 0; k--) { //for each row
+                for (int c = a; c > 0; c--) { //for each row
                     
-                    for (int spaces = 0; spaces < (x - i); spaces++) { // for the spaces
+                    for (int spaces = 0; spaces < (x - a); spaces++) { // for the spaces
                         System.out.print(" ");
                     }
                     
-                    for (int j = 0; j < i + (i - 1); j++) { //for each column
-                        System.out.print(i); //print number
+                    for (int b = 0; b < a + (a - 1); b++) { //for each column
+                        System.out.print(a); //print number
                     }
                     System.out.println(""); //end row
                 }
             
-                for (int spaces = 0; spaces < (x - i); spaces++) { //for the tab spaces
+                for (int spaces = 0; spaces < (x - a); spaces++) { //for the tab spaces
                     System.out.print(" ");
                 }
                 
-                for (int j = 0; j < i + (i - 1); j++) { //for the tabs to be printed
+                for (int b = 0; b < a + (a - 1); b++) { //for the tabs to be printed
                     System.out.print("-");
                 }
                 System.out.println("");
             }
 
             System.out.println("Using while loops: "); //Declaring what method is used
-            int i = 1; // Declaring the variables outside the loop as it is a while loop
-            int j = 0;
-            int k = i;
+            int a = 1; // Declaring the variables outside the loop as it is a while loop
+            int b = 0;
+            int c = a;
             int spaces = 0;
             
-            while (i < (x + 1)) { // For each number group
-                k = i; // setting the variables inside the loop as it is  while loop
+            while (a < (x + 1)) { // For each number group
+                c = a; // setting the variables inside the loop as it is  while loop
             
-                while (k > 0) { // For each row
+                while (c > 0) { // For each row
                     spaces = 0;
                     
-                    while (spaces < (x - i)) { // for the spaces
+                    while (spaces < (x - a)) { // for the spaces
                         System.out.print(" "); //print space
                         spaces++;
                     }
-                    j = 0;
+                    b = 0;
 
-                    while (j < i + (i - 1)) { //for each column
-                        System.out.print(i); // print number
-                        j++;
+                    while (b < a + (a - 1)) { //for each column
+                        System.out.print(a); // print number
+                        b++;
                     }
                     System.out.println(""); //end row
-                    k--;
+                    c--;
                 }
                 spaces = 0;
                 
-                while (spaces < (x - i)) { // for the tab spaces
+                while (spaces < (x - a)) { // for the tab spaces
                     System.out.print(" ");
                     spaces++;
                 }
-                j = 0;
+                b = 0;
 
-                while (j < i + (i - 1)) { // for the tabs
+                while (b < a + (a - 1)) { // for the tabs
                     System.out.print("-"); //printing the tabs
-                    j++;
+                    b++;
                 }
                 System.out.println("");
-                i++;
+                a++;
             }
 
         System.out.println("Using do while loop"); // declaring what method  is used
-        i = 1; // resetting the variables
-        j = 0;
-        k = i;
+        a = 1; // resetting the variables
+        b = 0;
+        c = a;
         spaces = 0;
 
             do { // setting the output
-                k = i;
+                c = a;
                 do {
                     spaces = 0; // setting the output
                     
                     do {
                         System.out.print(" "); 
                         spaces++;
-                    } while (spaces < (x - i)); // for the spaces
-                    j = 0;
+                    } while (spaces < (x - a)); // for the spaces
+                    b = 0;
                     
                     do {
-                        System.out.print(i);
-                        j++;
-                    } while (j < i + (i - 1)); // for each column
+                        System.out.print(a);
+                        b++;
+                    } while (b < a + (a - 1)); // for each column
                     System.out.println("");
-                    k--;
+                    c--;
                     spaces = 0;
-                } while (k > 0); // for each row
+                } while (c > 0); // for each row
     
                 do {
                     System.out.print(" ");
                     spaces++;
-                } while (spaces < (x - i)); // for each tab spaces
-                j = 0;
+                } while (spaces < (x - a)); // for each tab spaces
+                b = 0;
                 
                 do {
                     System.out.print("-");
-                    j++;
-                } while (j < i + (i - 1)); //for the tabs
+                    b++;
+                } while (b < a + (a - 1)); //for the tabs
                 System.out.println("");
-                i++;
-            } while (i < (x + 1)); //for each number group
+                a++;
+            } while (a < (x + 1)); //for each number group
         }        
                 
         else{
