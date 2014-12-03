@@ -19,7 +19,7 @@ public class WelcomeClass{
     System.out.println("   ------------");
     System.out.println("   ^  ^  ^  ^  ^  ^");
     System.out.println("  / \\/ \\/ \\/ \\/ \\/ \\ ");
-    System.out.println(" |-F--J--I--2--1--8-|");
+    System.out.println(" |-F--J--I--2--1--8--|");
     System.out.println("  \\ /\\ /\\ /\\ /\\ /\\ / ");
     System.out.println("   v  v  v  v  v  v ");
     System.out.println(" I run on the track and field team at Lehigh University. I hurdle and triple jump.");

@@ -17,7 +17,7 @@
     
     System.out.print("Enter an int giving the number of thousands-");
     
-    if (myScanner.hasNextInt()) {
+    if (Scanner.hasNextInt()) {
         int nBands = myScanner.nextInt(); 
         
         if ( nBands > 0 && nBands < 20 ) {

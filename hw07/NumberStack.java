@@ -11,28 +11,28 @@ public class NumberStack{
         System.out.print("Enter a number from 1-9: ");
         
         if (myScanner.hasNextInt()) {
-            int x = myScanner.nextInt(); //Here we prompt the user to enter a value
+            int input = myScanner.nextInt(); //Here we prompt the user to enter a value
             System.out.println("Using for loops: "); // Here we print which method we are using to create this stack of numbers
 
-            for (int a = 1; a < (x + 1); a++) { //for each number group
+            for (int i = 1; i < (input + 1); i++) { //for each number group
                 
-                for (int c = a; c > 0; c--) { //for each row
+                for (int j = i; j > 0; j--) { //for each row
                     
-                    for (int spaces = 0; spaces < (x - a); spaces++) { // for the spaces
+                    for (int spaces = 0; spaces < (input - i); spaces++) { // for the spaces
                         System.out.print(" ");
                     }
                     
-                    for (int b = 0; b < a + (a - 1); b++) { //for each column
-                        System.out.print(a); //print number
+                    for (int k = 0; k < i + (i - 1); k++) { //for each column
+                        System.out.print(i); //print number
                     }
                     System.out.println(""); //end row
                 }
             
-                for (int spaces = 0; spaces < (x - a); spaces++) { //for the tab spaces
+                for (int spaces = 0; spaces < (input - i); spaces++) { //for the tab spaces
                     System.out.print(" ");
                 }
                 
-                for (int b = 0; b < a + (a - 1); b++) { //for the tabs to be printed
+                for (int k = 0; k < i + (i - 1); k++) { //for the tabs to be printed
                     System.out.print("-");
                 }
                 System.out.println("");
